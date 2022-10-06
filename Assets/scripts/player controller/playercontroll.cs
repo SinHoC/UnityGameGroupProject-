@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playercontroll : MonoBehaviour
 {
+    public GameObject spaceshipbullet; //bullet prefab
+    public GameObject Bulletposition1;
     public float speed = 5f;
     public float min_x, max_x;
     public float min_y, max_y;
@@ -17,6 +19,12 @@ public class playercontroll : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        if (Input.GetKeyDown("space"))
+        {
+            GameObject Bullet1 = (GameObject)Instantiate(spaceshipbullet);
+            Bullet1.transform.position = Bulletposition1.transform.position;
+
+        }
     }
     void MovePlayer()
     {
@@ -53,4 +61,5 @@ public class playercontroll : MonoBehaviour
             transform.position = temp;
         }
     }
+
 }
