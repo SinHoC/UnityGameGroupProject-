@@ -679,6 +679,3 @@
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp","enqueuedNodeIndex":448,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.dll (+2 others)","enqueueingNodeIndex":449}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteResponseFile Library/Bee/artifacts/rsp/3938377011463375229.rsp","enqueuedNodeIndex":559,"enqueueingNodeAnnotation":"ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Unity.CollabProxy.Editor.dll (+pdb)","enqueueingNodeIndex":560}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb","enqueuedNodeIndex":680,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
-{"msg":"nodeRetryBuild","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)","index":428}
-{"msg":"runNodeAction","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)","index":428}
-{"msg":"noderesult","processed_node_count":675,"number_of_nodes_ever_queued":680,"annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)","index":428,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Assembly-CSharp.dll"}
