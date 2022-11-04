@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1590282908430416608}
   - component: {fileID: 2774537517467015367}
   - component: {fileID: 1196795232479281061}
+  - component: {fileID: 4997036815709461023}
   m_Layer: 0
   m_Name: enemyship
-  m_TagString: Untagged
+  m_TagString: enemyshiptag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,8 @@ Transform:
   m_LocalPosition: {x: -15.8338, y: 1.3006, z: 0}
   m_LocalScale: {x: 0.6209316, y: 0.40133557, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1547961435644223796}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97,3 +99,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6202cec0e7456a4fb284f0f2e91dca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &4997036815709461023
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284171165916409126}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.46, y: 4.59}
+    newSize: {x: 3.46, y: 4.59}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 4.8}
+  m_EdgeRadius: 0
+--- !u!1 &1966641361675495624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547961435644223796}
+  - component: {fileID: 7628021201384827536}
+  m_Layer: 0
+  m_Name: enemybulletposition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547961435644223796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966641361675495624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1, y: -1.9, z: -0.03316686}
+  m_LocalScale: {x: 1.6104833, y: 2.4916804, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1590282908430416608}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7628021201384827536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966641361675495624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05547bc70dbb0d049aecbcb9b27c0a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemybullet: {fileID: 3109427355160652618, guid: e00b31b894606e14ca9f5506d02bcc6d, type: 3}

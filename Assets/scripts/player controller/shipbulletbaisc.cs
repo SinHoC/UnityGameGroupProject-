@@ -24,5 +24,11 @@ public class shipbulletbaisc : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "enemyshiptag")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

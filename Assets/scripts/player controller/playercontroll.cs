@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class playercontroll : MonoBehaviour
 {
-    public GameObject spaceshipbullet; //bullet prefab
-    public GameObject Bulletposition1;
-    public float speed = 5f;
-    public float min_x, max_x;
-    public float min_y, max_y;
+    public float speed;
+	public GameObject bullet;
+	public GameObject bulletposition;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,48 +16,40 @@ public class playercontroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();
         if (Input.GetKeyDown("space"))
         {
-            GameObject Bullet1 = (GameObject)Instantiate(spaceshipbullet);
-            Bullet1.transform.position = Bulletposition1.transform.position;
+            GameObject shipbullet = (GameObject)Instantiate(bullet);
+            shipbullet.transform.position = bulletposition.transform.position;
 
         }
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");        
+        Vector2 direction = new Vector2(x, y).normalized;
+        Move(direction);
     }
-    void MovePlayer()
+	void Move(Vector2 direction)
+	{
+		//find the screen limits to the player's movement
+		Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0)); //bottom-left of the screen
+		Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1)); //top-right the screen
+
+		max.x = max.x - 0.8f; 
+		min.x = min.x + 0.8f; 
+
+		max.y = max.y - 1.2f; 
+		min.y = min.y + 1.2f; 
+
+		Vector2 pos = transform.position;
+		pos += direction * speed * Time.deltaTime;
+		pos.x = Mathf.Clamp(pos.x, min.x, max.x);
+		pos.y = Mathf.Clamp(pos.y, min.y, max.y);
+		transform.position = pos;
+	}
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (Input.GetAxisRaw("Vertical") > 0f)
+        if((collider.tag == "enemyshiptag") ||(collider.tag == "enemybullettag"))
         {
-            Vector3 temp = transform.position;
-            temp.y += speed * Time.deltaTime;
-            if (temp.y > max_y)
-                temp.y = max_y;
-            transform.position = temp;
-        }
-        else if (Input.GetAxisRaw("Vertical") < 0f)
-        {
-            Vector3 temp = transform.position;
-            temp.y -= speed * Time.deltaTime;
-            if (temp.y < min_y)
-                temp.y = min_y;
-            transform.position = temp;
-        }
-        else if (Input.GetAxisRaw("Horizontal") > 0f)
-        {
-            Vector3 temp = transform.position;
-            temp.x += speed * Time.deltaTime;
-            if (temp.x > max_x)
-                temp.x = max_x;
-            transform.position = temp;
-        }
-        else if (Input.GetAxisRaw("Horizontal") < 0f)
-        {
-            Vector3 temp = transform.position;
-            temp.x -= speed * Time.deltaTime;
-            if (temp.x < min_x)
-                temp.x = min_x;
-            transform.position = temp;
+            Destroy(gameObject);
         }
     }
-
 }

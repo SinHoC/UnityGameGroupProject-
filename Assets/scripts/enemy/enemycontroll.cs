@@ -8,7 +8,7 @@ public class enemycontroll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 3f;
+        speed = 4f;
     }
 
     // Update is called once per frame
@@ -20,6 +20,13 @@ public class enemycontroll : MonoBehaviour
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
 
         if(transform.position.y < min.y)
+        {
+            Destroy(gameObject);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if ((collider.tag == "playershiptag") || (collider.tag == "playershipbullettag"))
         {
             Destroy(gameObject);
         }

@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638027935797178798
+      ticks: 638029648147340515
     m_Hash: 1472552103
   m_LockFileStatus:
     m_FilePath: C:/Users/a1501/Documents/GitHub/gameproject/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638027935797188807
+      ticks: 638029648147345684
     m_Hash: 1119924275
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -2869,7 +2869,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: 2D Animation provides all the necessary tooling and runtime components
     for skeletal animation using Sprites.
   status: 4
@@ -2973,9 +2973,11 @@ m_ResolvedPackages:
     - 8.0.2
     - 8.0.3
     - 8.0.4
+    - 8.0.5
     - 9.0.0-pre.1
     - 9.0.0-pre.3
     - 9.0.0
+    - 10.0.0-pre.1
     compatible:
     - 7.0.7
     - 7.0.8
@@ -3020,7 +3022,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637958913350000000
   documentationUrl: 
@@ -3125,7 +3127,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: A ScriptedImporter for importing Adobe Photoshop PSB (Photoshop Big)
     file format. The ScriptedImporter is currently targeted for users who wants to
     create multi Sprite character animation using Unity 2D Animation Package.
@@ -3198,6 +3200,7 @@ m_ResolvedPackages:
     - 8.0.0-pre.1
     - 8.0.0-pre.3
     - 8.0.0
+    - 9.0.0-pre.1
     compatible:
     - 6.0.5
     - 6.0.6
@@ -3243,7 +3246,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637958913380000000
   documentationUrl: 
@@ -3321,7 +3324,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: SpriteShape Runtime & Editor Package contains the tooling and the
     runtime component that allows you to create very organic looking spline based
     2D worlds. It comes with intuitive configurator and a highly performant renderer.
@@ -3403,6 +3406,7 @@ m_ResolvedPackages:
     - 8.0.1
     - 9.0.0-pre.1
     - 9.0.0
+    - 10.0.0-pre.1
     compatible:
     - 7.0.6
     verified: 7.0.6
@@ -3452,7 +3456,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637958913420000000
   documentationUrl: 
@@ -3529,7 +3533,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: '2D Tilemap Extras is a package that contains extra scripts for use
     with 2D Tilemap features in Unity. These include custom Tiles and Brushes for
     the Tilemap feature.
@@ -3570,6 +3574,7 @@ m_ResolvedPackages:
     - 3.0.0
     - 3.0.1
     - 3.0.2
+    - 4.0.0-pre.1
     compatible:
     - 2.2.3
     verified: 2.2.3
@@ -3606,7 +3611,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637892785880000000
   documentationUrl: 
@@ -3778,7 +3783,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: 2D Common is a package that contains shared functionalities that are
     used by most of the other 2D packages.
   status: 4
@@ -3824,9 +3829,11 @@ m_ResolvedPackages:
     - 7.0.0
     - 7.0.1
     - 7.0.2
+    - 7.0.3
     - 8.0.0-pre.1
     - 8.0.0-pre.2
     - 8.0.0
+    - 9.0.0-pre.1
     compatible:
     - 6.0.4
     - 6.0.5
@@ -3866,7 +3873,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637958913310000000
   documentationUrl: 
