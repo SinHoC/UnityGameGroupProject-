@@ -1,12 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class playercontroll : MonoBehaviour
 {
-    public float speed;
+    public GameObject GameManagerGO;
+
 	public GameObject bullet;
 	public GameObject bulletposition;
+
+    public GameObject GameOverGO;
+
+    public float speed;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +60,11 @@ public class playercontroll : MonoBehaviour
     {
         if((collider.tag == "enemyshiptag") ||(collider.tag == "enemybullettag"))
         {
+
             Destroy(gameObject);
+
+            //GameManagerGO.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

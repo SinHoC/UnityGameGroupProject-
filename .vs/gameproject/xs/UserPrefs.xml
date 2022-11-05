@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{076FEB81-75DA-3D2C-A101-5BBC0D38A4FC}|">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameScore.cs">
+    <Files>
+      <File FileName="Assets/scripts/enemy/enemycontroll.cs" Line="13" Column="6" />
+      <File FileName="Assets/scripts/GameScore.cs" Line="7" Column="2" />
+      <File FileName="Assets/scripts/GameManager.cs" Line="57" Column="6" />
+      <File FileName="Assets/scripts/player controller/playercontroll.cs" Line="66" Column="116" />
+      <File FileName="Assets/scripts/MainMenu.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="gameproject" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="639fb2da-aa63-4305-a10a-c9e171f4e6b6" />
+</Properties>
