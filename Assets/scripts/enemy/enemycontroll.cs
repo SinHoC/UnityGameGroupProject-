@@ -1,21 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class enemycontroll : MonoBehaviour
 {
     //TODO
-    //GameObject scoreUITextGO;
+    GameObject scoreUITextGO;
+    public TextMeshProUGUI scoreUITextGO2;
+    double scoreValue = 0;
 
     float speed;
+
+    //TODO
+    //private void Awake()
+    //{
+    //    scoreUITextGO2 = GetComponent<TextMeshProUGUI>();
+    //}
+
+
     // Start is called before the first frame update
     void Start()
     {
         speed = 4f;
 
         //TODO
-        //scoreUITextGO = GameObject.FindGameObjectWithTag("ScoreTextTag");
+        scoreUITextGO = GameObject.FindGameObjectWithTag("ScoreTextTag");
+        //Debug.Log(scoreUITextGO.GetComponent<GameScore>());
+
     }
+
 
     // Update is called once per frame
     void Update()
@@ -29,13 +43,22 @@ public class enemycontroll : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        //TODO
+        //scoreUITextGO2.text = scoreValue.ToString();
     }
+
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if ((collider.tag == "playershiptag") || (collider.tag == "playershipbullettag"))
         {
             //TODO
             //scoreUITextGO.GetComponent<GameScore>().Score += 100;
+
+            scoreUITextGO.GetComponent<TMP_Text>().text += 100;
+
+            //scoreValue += 100;
 
             Destroy(gameObject);
         }

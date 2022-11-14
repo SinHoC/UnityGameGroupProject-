@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameScore : MonoBehaviour
 {
-    Text scoreTextUI;
+    public TMPro.TextMeshPro scoreTextUI;
 
     int score;
 
@@ -27,7 +27,8 @@ public class GameScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreTextUI = GetComponent<Text>(); 
+        scoreTextUI = GetComponent<TMPro.TextMeshPro>();
+        Debug.Log(scoreTextUI);
     }
 
     void UpdateScoreTextUI()
