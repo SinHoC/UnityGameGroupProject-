@@ -16,6 +16,8 @@ public class playercontroll : MonoBehaviour
 
     public float speed;
 
+    public static float score = 00000;
+
 
 
     // Start is called before the first frame update

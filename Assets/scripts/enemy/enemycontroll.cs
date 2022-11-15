@@ -7,16 +7,8 @@ public class enemycontroll : MonoBehaviour
 {
     //TODO
     GameObject scoreUITextGO;
-    public TextMeshProUGUI scoreUITextGO2;
-    double scoreValue = 0;
 
     float speed;
-
-    //TODO
-    //private void Awake()
-    //{
-    //    scoreUITextGO2 = GetComponent<TextMeshProUGUI>();
-    //}
 
 
     // Start is called before the first frame update
@@ -43,9 +35,6 @@ public class enemycontroll : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        //TODO
-        //scoreUITextGO2.text = scoreValue.ToString();
     }
 
 
@@ -54,11 +43,8 @@ public class enemycontroll : MonoBehaviour
         if ((collider.tag == "playershiptag") || (collider.tag == "playershipbullettag"))
         {
             //TODO
-            //scoreUITextGO.GetComponent<GameScore>().Score += 100;
-
-            scoreUITextGO.GetComponent<TMP_Text>().text += 100;
-
-            //scoreValue += 100;
+            playercontroll.score += 100;
+            scoreUITextGO.GetComponent<TMP_Text>().text = playercontroll.score.ToString();
 
             Destroy(gameObject);
         }

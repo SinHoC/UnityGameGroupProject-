@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
     public void RePlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        playercontroll.score = 0;
     }
 
 }
