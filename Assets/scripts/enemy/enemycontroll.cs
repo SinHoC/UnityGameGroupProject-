@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class enemycontroll : MonoBehaviour
 {
@@ -43,10 +44,16 @@ public class enemycontroll : MonoBehaviour
         if ((collider.tag == "playershiptag") || (collider.tag == "playershipbullettag"))
         {
             //TODO
-            playercontroll.score += 100;
+            playercontroll.score -= 1;
             scoreUITextGO.GetComponent<TMP_Text>().text = playercontroll.score.ToString();
 
             Destroy(gameObject);
+
+            if (playercontroll.score == 0)
+            {
+                SceneManager.LoadScene(5);
+            }
+
         }
     }
 }

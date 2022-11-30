@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{076FEB81-75DA-3D2C-A101-5BBC0D38A4FC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/enemy/enemycontroll.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameScore.cs">
     <Files>
-      <File FileName="Assets/scripts/enemy/enemycontroll.cs" Line="11" Column="27" />
-      <File FileName="Assets/scripts/GameScore.cs" Line="14" Column="12" />
-      <File FileName="Assets/scripts/GameManager.cs" Line="57" Column="6" />
-      <File FileName="Assets/scripts/player controller/playercontroll.cs" Line="66" Column="116" />
-      <File FileName="Assets/scripts/MainMenu.cs" Line="10" Column="1" />
-      <File FileName="Assets/scripts/enemy/enemyspawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/enemy/enemycontroll.cs" Line="52" Column="39" />
+      <File FileName="Assets/scripts/GameScore.cs" Line="31" Column="32" />
+      <File FileName="Assets/scripts/player controller/playercontroll.cs" Line="19" Column="35" />
+      <File FileName="Assets/scripts/MainMenu.cs" Line="39" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,11 +23,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="40055c18-d09b-4f0a-bc06-59d2841c925c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cdb9b64a-9067-46bc-9094-942b235978d4" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

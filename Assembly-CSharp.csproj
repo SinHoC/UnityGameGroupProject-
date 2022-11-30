@@ -57,14 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/scripts/player controller/playercontroll.cs" />
+    <Compile Include="Assets/scripts/enemy/level3 enemy/enemybulletrunlevel3.cs" />
     <Compile Include="Assets/scripts/Srcollbgoflevels.cs" />
     <Compile Include="Assets/scripts/enemy/enemybullet.cs" />
+    <Compile Include="Assets/scripts/enemy/level3 enemy/enemyspawnerlevel3.cs" />
     <Compile Include="Assets/scripts/MainMenu.cs" />
     <Compile Include="Assets/scripts/GameScore.cs" />
     <Compile Include="Assets/scripts/player controller/shipbulletbaisc.cs" />
-    <Compile Include="Assets/scripts/enemy/enemyspawner.cs" />
+    <Compile Include="Assets/scripts/enemy/level2 enemy/enemybulletrunlevel2.cs" />
+    <Compile Include="Assets/scripts/enemy/level2 enemy/enemyspawnerlevel2.cs" />
+    <Compile Include="Assets/scripts/enemy/level1 enemy/enemyspawnerlevel1.cs" />
     <Compile Include="Assets/scripts/enemy/enemycontroll.cs" />
-    <Compile Include="Assets/scripts/enemy/enemybulletrun.cs" />
+    <Compile Include="Assets/scripts/enemy/level1 enemy/enemybulletrun.cs" />
     <Compile Include="Assets/scripts/GameManager.cs" />
   </ItemGroup>
   <ItemGroup>

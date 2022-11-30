@@ -16,7 +16,7 @@ public class playercontroll : MonoBehaviour
 
     public float speed;
 
-    public static float score = 00000;
+    public static float score = 10;
 
 
 
@@ -40,6 +40,7 @@ public class playercontroll : MonoBehaviour
         Vector2 direction = new Vector2(x, y).normalized;
         Move(direction);
     }
+
 	void Move(Vector2 direction)
 	{
 		//find the screen limits to the player's movement
@@ -58,6 +59,7 @@ public class playercontroll : MonoBehaviour
 		pos.y = Mathf.Clamp(pos.y, min.y, max.y);
 		transform.position = pos;
 	}
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if((collider.tag == "enemyshiptag") ||(collider.tag == "enemybullettag"))
@@ -66,7 +68,10 @@ public class playercontroll : MonoBehaviour
             Destroy(gameObject);
 
             //GameManagerGO.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(4);
+
         }
     }
 }
