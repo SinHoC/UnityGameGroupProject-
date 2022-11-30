@@ -931,7 +931,7 @@ MonoBehaviour:
   bullet: {fileID: 8331348554654361218, guid: 7e0691a37e0ec8546bd9f821ab1dab0f, type: 3}
   bulletposition: {fileID: 1436389796}
   GameOverGO: {fileID: 0}
-  speed: 8
+  speed: 13
 --- !u!212 &1663826436
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class enemybullet : MonoBehaviour
     // default values of the enemy bullet.
     void Awake()
     {
-        speed = 5f;
+        speed = 10f;
         isReady = false;
 
     }
